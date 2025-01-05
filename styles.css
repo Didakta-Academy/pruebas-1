@@ -21,7 +21,7 @@ h1 {
 
 
 .mujer-comment {
-    background-color:lightgreen;
+    background-color:rgb(183, 247, 183);
 }
 
 
@@ -68,6 +68,21 @@ h1 {
     /* rotate: 10deg; */
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .anciano-comment {
     opacity: 0;
     /* Ocultar inicialmente */

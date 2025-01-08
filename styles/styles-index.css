@@ -4,6 +4,20 @@ body {
     /* background-color: #171717; --El color del logo, para usar para todas las fuentes */
     margin: 0;
     text-align:center;
+    font-size:20px;
+
+    h1 {
+        font-size: 3em;
+        font-weight: normal;
+    }
+    h2 {
+        font-size: 1.6em;
+        /* font-weight: normal; */
+    }
+    p {
+        font-size: 1em;
+    }
+
 }
 
 .space {
@@ -43,8 +57,7 @@ body {
     margin: 5em;
     .content-middle {
         text-align: left;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin: 0 15%;
         .intense-background-text {
             background-color: aquamarine;
             padding: 3px;
@@ -60,6 +73,9 @@ body {
             padding: 5px 20px;
             border-left: 2px solid darkgray;
         }
+    }
+    .content-h2 {
+        margin: 0 5%;
     }
 
 }

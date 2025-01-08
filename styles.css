@@ -143,3 +143,28 @@ h1 {
   .inside-image {
     width:200px;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* La otra pagina */
+
+  .todo-centrado {
+    display: flex;
+    text-align: center;
+  }

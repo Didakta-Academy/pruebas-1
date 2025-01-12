@@ -118,5 +118,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+// Obtén el logo y el menú desplegable
+const logo = document.getElementById("logo");
+const dropdownMenu = document.getElementById("dropdown-menu");
 
+// Alternar la visibilidad del menú cuando se hace clic en el logo
+logo.addEventListener("click", () => {
+  if (dropdownMenu.style.display === "none" || dropdownMenu.style.display === "") {
+    dropdownMenu.style.display = "block";
+  } else {
+    dropdownMenu.style.display = "none";
+  }
+});
+
+// Opcional: Ocultar el menú si se hace clic fuera de él
+document.addEventListener("click", (e) => {
+  if (!logo.contains(e.target) && !dropdownMenu.contains(e.target)) {
+    dropdownMenu.style.display = "none";
+  }
+});
 

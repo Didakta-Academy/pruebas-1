@@ -131,7 +131,7 @@ h1 {
 
   .mujer-image {
     margin-left: -50%;
-    margin-bottom:-10%;
+    margin-bottom:-20%;
   }
 
   .anciano-image {
@@ -168,4 +168,66 @@ h1 {
 
 
 
+  .logo-container {
+    position: fixed;
+    top: 0%;
+    right: 10px;
+    z-index: 1000;
+    display:flex;
+    justify-content: start;
+  }
+  
+  .logo {
+    cursor: pointer;
+    width: 7rem; /* Ajusta el tamaño del logo */
+    /* height: 4rem; */
+    z-index: 1002;
 
+  }
+  
+  .dropdown-menu {
+    display: none; /* Oculta el menú inicialmente */
+    position: absolute;
+    top: 7rem; /* Espaciado debajo del logo */
+    right: 1.5rem;
+    /* background-color: rgb(255, 248, 239); */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    border: 1px solid #ccc;
+    list-style: none;
+    margin: 0;
+    padding: 1rem 2rem;
+    white-space:initial;
+    width: 17rem;
+    z-index:999;
+    transition: max-height 0.3s ease-out; /* Transición suave */
+    border-radius:10%;
+
+  }
+
+  .list-title {
+    font-weight: bold;
+    font-size:1.2em;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dropdown-menu li {
+    margin: 0;
+    padding: 10px;
+    /* border-bottom: 1px solid #ddd; */
+    list-style: none;
+
+  }
+  
+  .dropdown-menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-menu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f0f0f0;
+  }

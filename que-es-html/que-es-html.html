@@ -1,4 +1,6 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>03. Qué es HTML</title><style>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>03. Qué es HTML</title>
+	<link rel="stylesheet" href="../styles/styles-articulos.css">
+<style>
 /* cspell:disable-file */
 /* webkit printing magic: print all background colors */
 html {
@@ -13,6 +15,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+	font-size: 1.2em;
 }
 @media only screen {
 	body {
@@ -48,7 +51,7 @@ h3 {
 }
 
 .page-title {
-	font-size: 2.5rem;
+	font-size: 3.5rem;
 	font-weight: 700;
 	margin-top: 0;
 	margin-bottom: 0.75em;
@@ -111,7 +114,7 @@ hr {
 }
 
 img {
-	max-width: 100%;
+	/* max-width: 100%; */
 }
 
 @media only print {
@@ -676,17 +679,23 @@ blockquote {
 </style></head><body><article class="page sans"><header><p class="">
 </p><p class="">
 </p><p class="">
-</p><p class="">
-</p><p class="">
 </p><h1 class="page-title">¿Qué es HTML?</h1><p class="page-description"></p></header><div class="page-body">
-	
 	
 <p class="">
 </p><p class="">Es la primera <mark class="highlight-yellow_background">herramienta</mark> que necesitas para construir tus proyectos. Es una forma de escribir código, es un lenguaje.</p><p class="">
 </p><p class=""><strong>Cualquier web que puedas imaginarte, incluso la más bonita y tecnológica está construida sobre HTML.</strong></p><p class="">
 </p><p class="block-color-red"><em>(Carrusel de los proyectos hechos)</em></p><p class="">
-</p><figure class="block-color-purple_background callout" style="white-space:pre-wrap;display:flex"><div style="font-size:1.5em"><span class="icon">👧🏼</span></div><div style="width:100%"><p class="">Hola! Soy Lady Code 😊 Estoy repasando el curso.</p><p class=""><br/><br/><strong>Esas imágenes que ves ahí son proyectos que vas a hacer más adelante</strong><br/><br/>yo ya he acabado de hacerlos todos, son bangers<br/></p></div></figure><p class="">
-</p><p class="">
+</p>
+<div class="mujer-section">
+	<!-- <div class="mujer-comment comment"> -->
+		<figure class="block-color-purple_background callout mujer-comment comment" style="white-space:pre-wrap;display:flex"><div style="width:100%"><p class="">Hola! Soy Lady Code 😊 Estoy repasando el curso.</p><p class=""><br/><strong>Esas imágenes que ves ahí son proyectos que vas a hacer más adelante</strong><br/><br/>yo ya he acabado de hacerlos todos, son bangers<br/></p></div>
+		</figure>
+	<!-- </div> -->
+	<div class="image-wrapper">
+		<img class="mujer-image character" src="../images/happy_anime_girl.png">
+	</div>
+</div>
+<p class="">
 </p><p class="">Ahora bien, las web más pro tienen otros elementos aparte del código HTML. En próximas lecciones hablaremos de ellos pero antes hay que aprender a construir los cimientos.</p><p class="">
 </p><p class="">Aunque para construir una web primero hay que responder a la pregunta</p><p class="">
 </p><h2 class="">¿Qué es una página web?</h2><hr/><p class="">Cuando escribes una dirección web en el navegador y pulsas enter en el teclado se carga una página.</p><p class="">
@@ -694,8 +703,7 @@ blockquote {
 </p><p class="">Lo que está pasando aquí es que el navegador para mostrar la web que ves recibe <mark class="highlight-yellow_background">unos archivos</mark> (estos archivos es lo que son la web en realidad) desde otro ordenador que se los envía.</p><div class="column-list"><div style="width:50%" class="column"><p class="">
 </p><p class="">
 </p><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex"><div style="width:100%"><p class="">En estos archivos hay instrucciones</p><ul class="bulleted-list"><li style="list-style-type:disc">muestra un título</li></ul><ul class="bulleted-list"><li style="list-style-type:disc">muestra esta imagen</li></ul><ul class="bulleted-list"><li style="list-style-type:disc">muestra este texto</li></ul></div></figure></div><div style="width:50.000000000000014%" class="column"><figure class="block-color-brown_background callout" style="white-space:pre-wrap;display:flex"><div style="font-size:1.5em"><span class="icon">👴🏻</span></div><div style="width:100%"><p class="">Ese ‘otro ordenador’ que pone ahí, es ‘un servidor’.</p><p class="">Les tengo dicho que usen términos técnicos, como debe ser 🧐</p></div></figure></div></div><p class="">
-</p><p class="">
-</p><p class="">El navegador es un programa que entiende estos archivos y va creando poco a poco el contenido de ese sitio web.</p><div class="column-list"><div style="width:50%" class="column"><p class="block-color-yellow_background">Postit: Si visitas otra web el navegador recibirá otros archivos distintos porque cada web es diferente.</p><p class="">
+</p><p class="">El navegador es un programa que entiende estos archivos y va creando poco a poco el contenido de ese sitio web.</p><div class="column-list"><div style="width:50%" class="column"><p class="block-color-yellow_background" style="padding:10%">Si visitas otra web el navegador recibirá otros archivos distintos porque cada web es diferente.</p><p class="">
 </p></div><div style="width:50.000000000000014%" class="column"><p class="">
 </p><figure><div><div style="display: flex; align-items: center; justify-content: center;">
 		<video autoplay loop muted  playsinline width="150%">
@@ -704,10 +712,7 @@ blockquote {
 </figure></div></div><p class="">
 </p><p class="">
 </p><p class="">Este proceso es muy rápido, pero el ordenador ha leído todo lo que pone en estos archivos y lo ha mostrado.</p><p class="">
-</p><p class=""><strong>Estos archivos pueden ser distintos</strong></p><ul class="bulleted-list"><li style="list-style-type:disc">Unos van a tener código HTML</li></ul><p class="">
-</p><ul class="bulleted-list"><li style="list-style-type:disc">Otros van a tener código CSS</li></ul><p class="">
-</p><ul class="bulleted-list"><li style="list-style-type:disc">Y otros van a tener código JavaScript</li></ul><p class="">
-</p><p class="">
+</p><p class=""><strong>Estos archivos pueden ser distintos</strong></p><ul class="bulleted-list"><li style="list-style-type:disc">Unos van a tener código HTML</li></ul><ul class="bulleted-list"><li style="list-style-type:disc">Otros van a tener código CSS</li></ul><ul class="bulleted-list"><li style="list-style-type:disc">Y otros van a tener código JavaScript</li></ul><p class="">
 </p><p class="">Estos archivos no es necesario que te lleguen de un servidor para que el navegador pueda ejecutarlos, sino que puedes crear tus propios archivos con tus propias instrucciones porque <mark class="highlight-yellow_background">HTML sirve para mostrar cosas en tu pantalla.</mark></p><p class="">
 </p><p class=""><strong>Después si quieres que esté accesible para otros ya lo subes en un servidor y se convertirá en una web.</strong></p><p class="">
 </p><p class="">Si decides que no lo quieres subir <mark class="highlight-yellow_background">es una aplicación</mark> que tienes para ti en tu ordenador.</p><p class="">
@@ -726,8 +731,19 @@ blockquote {
 		</video></div></div>
 </figure><p class="">
 </p><p class="">Si compruebas la carpeta que creaste anteriormente verás que ha aparecido este archivo en ella.</p><p class="">De momento no te preocupes por el nombre, llámalo así tú también y listo.</p><p class="">
-</p><figure class="block-color-brown_background callout" style="white-space:pre-wrap;display:flex"><div style="font-size:1.5em"><span class="icon">👴🏻</span></div><div style="width:100%"><p class="">El navegador está configurado para buscar primero el archivo llamado <em>index.html </em>y mostrarlo como página predeterminada.<br/><br/><br/><strong>Los primeros servidores adoptaron el nombre </strong><em><strong>index</strong></em><strong> porque su propósito era listar o </strong><em><strong>indexar</strong></em><strong> los contenidos. Con el tiempo, </strong><em><strong>index.html</strong></em><strong> se estandarizó como la página principal que servía como índice o como menú de navegación del sitio.</strong></p><p class="">
-</p><figure class="image"><a href="image%201.png"><img style="width:384px" src="image%201.png"/></a><figcaption>Este es el index de la primera web que existió</figcaption></figure></div></figure><p class="">
+</p>
+<div class="anciano-section">
+	<div class="image-wrapper">
+		<img class="anciano-image character" src="../images/grandfather.png">
+	</div><figure class="block-color-brown_background callout anciano-comment comment" style="white-space:pre-wrap;display:flex"><div style="width:100%"><p class="">El navegador está configurado para buscar primero el archivo llamado <em>index.html </em>y mostrarlo como página predeterminada.<br/><br/><br/><strong>Los primeros servidores adoptaron el nombre </strong><em><strong>index</strong></em><strong> porque su propósito era listar o </strong><em><strong>indexar</strong></em><strong> los contenidos. Con el tiempo, </strong><em><strong>index.html</strong></em><strong> se estandarizó como la página principal que servía como índice o como menú de navegación del sitio.</strong></p><p class="">
+		</p><figure class="image"><a href="image%201.png"><img style="width:384px" src="image%201.png"/></a><figcaption>Este es el index de la primera web que existió</figcaption></figure></div>
+		</figure>
+	<!-- </div> -->
+
+
+</div>
+
+<p class="">
 </p><p class="">Si abres tu archivo con el navegador aún no mostrará nada, porque el archivo HTML todavía está vacío.</p><p class="">
 </p><p class="">Ábrelo con el VSCode y escribe algún texto. Para visualizar los cambios que hagas en el VSCode tienes que guardar dentro del programa y volver a abrir el archivo con el navegador</p><p class="">
 </p><figure><div><div style="display: flex; align-items: center; justify-content: center;">
@@ -746,8 +762,10 @@ blockquote {
 </div>
 </figure><p class="">
 </p><div class="column-list"><div style="width:50%" class="column"><p class="">
-</p></div><div style="width:50%" class="column"><p class="block-color-yellow_background"><mark class="highlight-yellow_background">Postit: Lo que muestra el navegador aunque parece inmediato no lo es. El navegador interpreta el código instrucción a instrucción.</mark></p></div></div><p class="">
+</p></div><div style="width:50%" class="column"><p class="block-color-yellow_background" style="padding:10%"><mark class="highlight-yellow_background">Lo que muestra el navegador aunque parece inmediato no lo es. El navegador interpreta el código instrucción a instrucción.</mark></p></div></div><p class="">
 </p><p class="">En HTML se pueden hacer más cosas que mostrar texto como un bloc de notas, tienes más funciones usando las tags</p><p class="">
 </p><p class="">
 </p><div class="column-list"><div style="width:50%" class="column"></div><div style="width:50%" class="column"><div><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/token_gray.svg"/></div><div style="width:100%"><p class="">Regístrate para guardar tu progreso</p></div></figure></div><p class=""><mark class="highlight-gray">(No saldrá siempre a la derecha este campo para poner el mail. Los ya registrados no deben verlo)</mark></p></div></div><p class="">
-</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span>
+<script src="../js/javascript-code.js"></script>
+</body></html>

@@ -25,6 +25,7 @@ body {
         font-family: Lato, sans-serif;
         font-size: 1em;
     } */
+    margin-top: 0;
 
 }
 
@@ -33,6 +34,8 @@ article {
     padding: 3em;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05); /* Sombra aún más suave */
     border-radius: 4px; /* Opcional: bordes redondeados */
+    margin-top:0;
+    padding-top: 0;
 }
 
 
@@ -57,6 +60,30 @@ article {
 
     }
 }
+
+.callout {
+    border: 1px solid rgba(55, 53, 47, 0.788);
+}
+
+.formacion-column {
+    /* border: 1px solid gold; */
+    border-radius: 10px;
+    /* border-right:none; */
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.formacion-column-sides {
+    padding-top: 2em;
+}
+
+h1 {
+    color: rgb(255, 254, 251);
+    background-color: rgb(55, 53, 47);
+    padding: .5em .5em !important;
+    text-align: center;
+}
+
 /* 
 .space {
     height: 50px;
